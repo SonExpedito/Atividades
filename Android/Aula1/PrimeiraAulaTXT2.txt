@@ -1,0 +1,3 @@
+O Metódo String serve para escrever os Textos nos lugares demarcados pelo XML
+
+

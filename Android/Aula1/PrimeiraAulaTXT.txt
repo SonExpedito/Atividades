@@ -1,0 +1,16 @@
+Abrir hierarquia de pastas
+
+-fechar o mainactivity
+
+
+app > src > main > AndroidManifest.xml (xml marcação)
+
+no Android Manifest
+<LinearLayout> <!--Cria estrutura estilo Grid, colocando um embaixo do outro (empilhando)-->
+ android:layout_height = "wrap_content" <!--Permite o Ajuste o Tamanho Vertical da Tela--> 
+ android:layout_width = "match_parent" <!--Ajuste Horizontal-->
+ android:layout_gravity = "center-vertical" <!--forma de organização--> 
+ android:orientation = "vertical"> <!--Define a Orientação da Tela-->
+  
+
+</LinearLayout>
