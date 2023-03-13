@@ -25,7 +25,11 @@ class MainActivity : AppCompatActivity() {
                 +"\n" + edtCidade.text.toString()
                 +"\n" + edtEstado.text.toString()
                 +"\n" + edtCep.text.toString(), Toast.LENGTH_SHORT)
+
+            val toast2= Toast.makeText(this, "Dados Cadastrados com Sucesso", Toast.LENGTH_SHORT)
+
             toast.show()
+            toast2.show()
         }
     }
 }

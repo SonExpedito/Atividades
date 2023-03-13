@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Cadastrov2</string>
-    <string name="txtCadastro">Cadastro</string>
+    <string name="txtBemVindo">Bem Vindo ao NSA</string>
+    <string name="txtCadastro">Cadastre a Seguir</string>
     <string name="txtNomeMsg">Nome</string>
     <string name="txtEnderecoMsg">Endereco</string>
     <string name="txtBairroMsg">Bairro </string>
