@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Cadastrov2</string>
     <string name="txtCadastro">Cadastro</string>
-    <string name="txtNomeMsg">Digite seu nome</string>
-    <string name="txtEnderecoMsg">Digite seu Endereco</string>
-    <string name="txtBairroMsg"> Digite seu Bairro </string>
-    <string name="txtCidadeMsg">Digite sua Cidade</string>
-    <string name="txtEstadoMsg">Digite seu Estado</string>
-    <string name="txtCepMsg">Digite seu Cep</string>
+    <string name="txtNomeMsg">Nome</string>
+    <string name="txtEnderecoMsg">Endereco</string>
+    <string name="txtBairroMsg">Bairro </string>
+    <string name="txtCidadeMsg">Cidade</string>
+    <string name="txtEstadoMsg">Estado</string>
+    <string name="txtCepMsg">Cep</string>
 
     <string name="btnCadastrar">Cadastrar</string>
 </resources>
