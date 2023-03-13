@@ -12,3 +12,6 @@ create Table Fornecedores (
  CNPJ varchar (25) Not Null Unique,
  Endreco Varchar (55) Not Null,
 )
+
+use master
+drop database LojaTecidos

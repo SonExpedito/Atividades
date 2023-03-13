@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:text="@string/txtCadastro"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="Name"
+        android:hint="@string/txtNomeMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+     //Endereço
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="Address"
+        android:hint="@string/txtEnderecoMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+     //Bairro
+    <EditText
+        android:id="@+id/edtBairro"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="Distric"
+        android:hint="@string/txtBairroMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+
+    //Cidade
+    <EditText
+        android:id="@+id/edtCidade"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="City"
+        android:hint="@string/txtCidadeMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    //Estado
+    <EditText
+        android:id="@+id/edtEstado"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="State"
+        android:hint="@string/txtEstadoMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    //Cep
+    <EditText
+        android:id="@+id/edtCep"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:autofillHints="Zip Code"
+        android:hint="@string/txtCepMsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:text="@string/btnCadastrar"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

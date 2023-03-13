@@ -13,3 +13,6 @@ create Table Funcionario(
   Endereco Varchar(55) Not Null Unique, --Endereço do Funcionário
 
 )
+
+use master
+drop database Escola

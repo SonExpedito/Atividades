@@ -15,5 +15,6 @@ create Table pet
 
 )
 
-use master
+--Extras/Testes em aula
+use master 
 drop database ExercBD01

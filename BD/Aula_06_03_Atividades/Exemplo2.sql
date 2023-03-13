@@ -15,9 +15,11 @@ Create Table Funcionario ( --Criando tabela Funcionario
   DataAdmissao datetime, --criando campo dataadmissao
   DataCadastro datetime, --Criando campo datacastro
   Sexo char(1)
-
-
 )
 
+--Extras
+use master
 drop table Departamento
+drop table Funcionario
+drop database ExercBD02
 

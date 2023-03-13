@@ -11,3 +11,6 @@ create Table Departamento(
  Contato Varchar (15) Not Null Unique, --Email ou Telefone
 
 )
+
+use master
+drop database Empresa
