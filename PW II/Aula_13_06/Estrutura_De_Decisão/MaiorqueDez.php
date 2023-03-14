@@ -5,8 +5,8 @@
     <body>
         <br>
         <?php 
-         $A = $_POST['txta'];  
-         $B = $_POST['txtb']; 
+         $A = $_POST['A'];  
+         $B = $_POST['B']; 
           $soma= $A + $B;
           echo "A soma dos valores é ".$soma .'<br>';  
           if ($soma>10) {    echo "Soma maior que dez ";}
