@@ -10,35 +10,48 @@
          $N2 = $_POST['N2'];
          
 
-         if ($N1>$N2){
-             if ($N2 %2 != 0){
-                  for ($Cont = $N2+2; $Cont =$N1; +2){
-                       echo $Cont . "<br>";
+        if ($N1==$N2){
+             echo "Os Valores são iguais e não possuem valores ímpares entre eles.";
+        }
+        else{
+             if($N1>$N2){
+                  if($N2 %2 != 0){
+                       for($Cont = $N2; $Cont<=$N1; $Cont=$Cont+2){
+                            echo $Cont ."<br>";
+                            
+                       }
+
                   }
+                  else{
+                    for($Cont = $N2+1; $Cont<=$N1; $Cont=$Cont+2){
+                         echo $Cont ."<br>";
+                         
+                    }
+
+
+                  }
+
+
              }
              else{
-                for ($Cont = $N2+1; $Cont =$N1; +2){
-                    echo $Cont . "<br>";
-               }
-             }
+                   if($N1 %2 != 0){
+                       for($Cont = $N1; $Cont<=$N2; $Cont=$Cont+2){
+                           echo $Cont ."<br>";
+                         
+                     }
 
-         }
-         else{
-            if ($N1 %2 != 0){
-                for ($Cont = $N1+2; $Cont =$N2; +2){
-                     echo $Cont . "<br>";
+                   }
+                   else{
+                       for($Cont = $N1+1; $Cont<=$N2; $Cont=$Cont+2){
+                      echo $Cont ."<br>";
+                      
+                   }      
 
-                }
-           }
-           else{
-              for ($Cont = $N1+1; $Cont =$N2; +2){
-                  echo $Cont . "<br>";
 
              }
-           }
-
-
-         }
+ 
+        }
+     }
       ?>
 </body>
 </html>
