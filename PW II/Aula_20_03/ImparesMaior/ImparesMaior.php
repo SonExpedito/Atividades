@@ -23,7 +23,7 @@
 
                   }
                   else{
-                    for($Cont = $N1+1; $Cont>=$N2; $Cont=$Cont-2){
+                    for($Cont = $N1-1; $Cont>=$N2; $Cont=$Cont-2){
                          echo $Cont ."<br>";
                          
                     }
@@ -42,7 +42,7 @@
 
                    }
                    else{
-                       for($Cont = $N2+1; $Cont>=$N1; $Cont=$Cont-2){
+                       for($Cont = $N2-1; $Cont>=$N1; $Cont=$Cont-2){
                       echo $Cont ."<br>";
                       
                    }      
