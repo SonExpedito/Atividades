@@ -17,7 +17,8 @@ public class Principal {
         
        //Começo Do Código
         JOptionPane.showMessageDialog(null, "Bem Vindo a Calculadora de Salário e Comissão");
-        double Valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o Número de Vendas"));
+        double Valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o Número de Vendas \n"
+                + "e cadastre o Vendedor a Seguir"));
         
         SalarioFinal=Vendedorzin.calculoComissao(Valor);
         
