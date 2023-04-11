@@ -32,13 +32,14 @@
         }
 
         else {
+          if ($Sexo == "Feminino"){
             $Ideal = (pow($Altura,2))*22;
              
             if ($Peso>$Ideal){
                 echo "<span style = 'color:red;'> Você está acima do Seu Peso Ideal (" .$Ideal .")</span>";
  
               }
-              else{
+            else{
                     if ($Peso<$Ideal){
                      echo "<span style = 'color:yellow;'> Você está abaixo do Seu Peso Ideal (" .$Ideal .")</span>";
  
@@ -49,8 +50,11 @@
                     }
  
               }
+            }
+            else{
+                echo "O Sexo não foi informado";
 
-
+            }
 
         }
 

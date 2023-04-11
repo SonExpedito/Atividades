@@ -9,7 +9,7 @@
         $senha = $_POST['senha'];
 
 
-        if ($name == "ETE" && $senha = "ETE"){
+        if ($name == "ETE" && $senha == "ETE"){
               echo "Bem Vindo ao Valorant";
         }
         else{
