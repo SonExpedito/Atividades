@@ -14,7 +14,7 @@
             case 3: echo "Operário"; break;
             case 4: echo "Analista"; break;
             case 5: echo "Faxineiro"; break;
-            default: "Não existe um cargo para o valor digitado";
+            default: echo "Não existe um cargo para o valor digitado";
                  break;
           }
 
