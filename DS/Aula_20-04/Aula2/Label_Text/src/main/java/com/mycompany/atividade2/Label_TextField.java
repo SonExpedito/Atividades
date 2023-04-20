@@ -31,8 +31,10 @@ public class Label_TextField extends JFrame {
             ImageIcon icone = new ImageIcon("Cellbit.jpg");
             setIconImage(icone.getImage());
             
-            ImageIcon cellbit = new ImageIcon("Cellbit2.jpeg");
+            ImageIcon imagenzinha = new ImageIcon("Cellbit2.jpeg");
+            Image imagenzinha2 = imagenzinha.getImage().getScaledInstance(300, 200, Image.SCALE_SMOOTH); //Reescalonou e colocando num objeto
             
+            ImageIcon cellbit = new ImageIcon(imagenzinha2); //Transformou o objeto em uma imagem comum.
             
             
             //Elementos
@@ -62,7 +64,7 @@ public class Label_TextField extends JFrame {
               texto2.setBounds(110,60,20,20);
               texto3.setBounds(110,100,80,20);
               texto4.setBounds(130,140,80,20);
-              imagem.setBounds(120,200,380,250);
+              imagem.setBounds(120,170,380,250);
               /* Colocando as Cores
                  Padrão variavel.setForeground( new Color(R,G,B))
                 */
