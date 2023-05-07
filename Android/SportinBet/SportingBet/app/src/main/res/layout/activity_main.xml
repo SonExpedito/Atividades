@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#060A61"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/SportingBet"
+        android:layout_width="336dp"
+        android:layout_height="171dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        tools:srcCompat="@drawable/sportingbet"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/DiceImage"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+
+        tools:srcCompat="@drawable/dice_1" />
+
+    <Button
+        android:id="@+id/botaozinho"
+        android:layout_width="wrap_content"
+        android:layout_height="57sp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#F50057"
+        android:text="@string/rollarzin" />
+
+    <TextView
+        android:id="@+id/textozinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textinho"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/Cellbit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#E4DEDE"
+        android:hint="@string/advinhe"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#ECE4E4"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FDFBFB"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/Neymar"
+        android:layout_width="460dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        tools:srcCompat="@drawable/neymar"
+        tools:visibility="visible" />
+
+
+</LinearLayout>
