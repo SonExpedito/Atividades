@@ -21,7 +21,7 @@ public class Principal extends JFrame {
      JCheckBox Automoveis,Avioes,Barcos;
      
      JComboBox estado;
-     String estadoscivis[] =  {"Solteiro","Casado"};
+     String estadoscivis[] =  {"Solteiro (a)","Casado (a)","Divorciado (a)", "Viúvo (a)"};
      String resuSex="",ResuInte="Essa é minha opinião e eu to aqui para dividir ela com você.";
      
      
@@ -70,7 +70,7 @@ public class Principal extends JFrame {
           
           //ComboBox
           estado = new JComboBox(estadoscivis);
-          estado.setMaximumRowCount(2);
+          estado.setMaximumRowCount(4);
           
           //Radio
           masculino = new JRadioButton("Masculino");
