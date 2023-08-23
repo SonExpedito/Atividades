@@ -102,7 +102,7 @@
                 try{
                     $this->conn = new Conectar();
                     $sql = $this->conn->prepare("delete from livro where cod_livro = ?");
-                    @$sql-> bindParam(1, $this->getId(), PDO::PARAM_STR);
+                    @$sql-> bindParam(1, $this->getcod_livro(), PDO::PARAM_STR);
 
                     if($sql->execute() == 1){
                         return "Excluido com sucesso!";
@@ -122,7 +122,7 @@
                 try{
                     $this->conn = new Conectar();
                     $sql = $this->conn->prepare("Select * from livro where titulolivro like ?");
-                    @$sql-> bindParam(1, $this->getNome(), PDO::PARAM_STR);
+                    @$sql-> bindParam(1, $this->gettitulolivro(), PDO::PARAM_STR);
                     $sql->execute();
                     return $sql->fetchAll();
                     $this->conn = null;

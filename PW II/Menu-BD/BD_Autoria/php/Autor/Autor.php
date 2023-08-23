@@ -101,7 +101,41 @@
                 catch(PDOException $exc){
                     echo "Erro ao executar consulta. " . $exc->getMessage();
                 }
-    }
+         }
+
+         function exclusao(){
+            try{
+                $this->conn = new Conectar();
+                $sql = $this->conn->prepare("delete from autor where cod_autor = ?");
+                @$sql-> bindParam(1, $this->getcod_autor(), PDO::PARAM_STR);
+
+                if($sql->execute() == 1){
+                    return "Excluido com sucesso!";
+                }
+                else{
+                    return "Erro ao excluir";
+                }
+                $this->conn = null;
+            }
+            catch(PDOException $exc){
+                echo "Erro ao excluir o Registro. " . $exc->getMessage();
+            }
+        }
+        
+    
+        function consultar(){
+            try{
+                $this->conn = new Conectar();
+                $sql = $this->conn->prepare("Select * from autor where nomeautor like ?");
+                @$sql-> bindParam(1, $this->getNome(), PDO::PARAM_STR);
+                $sql->execute();
+                return $sql->fetchAll();
+                $this->conn = null;
+            }
+            catch(PDOException $exc){
+                echo "Erro ao consultar. " . $exc->getMessage();
+            }
+        }
 
     }
 
