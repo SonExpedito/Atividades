@@ -61,8 +61,8 @@
                                 include_once 'Produto.php';
                                 $pro = new Produto();
                                 $pro->setId($_GET['id']);
-                                echo $pro->exclusao() ."A Página irá recarregar em 4 segundos";
-                                header("Refresh: 4; url=exclusao.php");
+                                echo $pro->exclusao() ."A Tabela Recarregará";
+                                header("Refresh: 1;" );
         
                             }
 

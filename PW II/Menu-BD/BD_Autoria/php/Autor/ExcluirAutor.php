@@ -67,8 +67,8 @@
                                 include_once 'Autor.php';
                                 $pro = new Autor();
                                 $pro->setcod_autor($_GET['cod_autor']);
-                                echo $pro->exclusao() ."A Página irá recarregar em 4 segundos";
-                                header("Refresh: 4; url=ExcluirAutor.php");
+                                echo $pro->exclusao() ."A Tabela Recarregará";
+                                header("Refresh: 1;" );
                                 
         
                             }

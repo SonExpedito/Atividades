@@ -65,8 +65,8 @@
                                 include_once 'Livro.php';
                                 $pro = new Livro();
                                 $pro->setcod_livro($_GET['cod_livro']);
-                                echo $pro->exclusao() ."A Página irá recarregar em 4 segundos";
-                                header("Refresh: 4; url=ExcluirLivro.php");
+                                echo $pro->exclusao() ."A Tabela Recarregará";
+                                header("Refresh: 1;" );
                                
         
                             }
