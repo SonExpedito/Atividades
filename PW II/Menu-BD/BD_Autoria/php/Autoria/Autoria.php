@@ -111,7 +111,7 @@
                 try{
                     $this->conn = new Conectar();
                     $sql = $this->conn->prepare("Select * from autoria where editora like ?");
-                    @$sql-> bindParam(1, $this->getNome(), PDO::PARAM_STR);
+                    @$sql-> bindParam(1, $this->geteditora(), PDO::PARAM_STR);
                     $sql->execute();
                     return $sql->fetchAll();
                     $this->conn = null;
@@ -120,6 +120,43 @@
                     echo "Erro ao consultar. " . $exc->getMessage();
                 }
             }
+
+
+             function alterar(){
+                try{
+                    $this->conn = new Conectar();
+                    $sql = $this->conn->prepare("Select * from autoria where cod_autor = ? and cod_livro = ?");               
+                    @$sql->bindParam(1, $this->getcod_autor(),PDO::PARAM_STR);
+                    @$sql-> bindParam(2, $this->getcod_livro(), PDO::PARAM_STR);
+                    $sql->execute();
+                    return $sql->fetchAll();
+                    $this->conn = null;
+                }catch(PDOException $exc){
+                    echo "Erro ao alterar. " . $exc->getMessage();
+                }
+            }
+        
+            function alterar2(){
+                try{
+                    $this->conn = new Conectar();
+                    $sql = $this->conn->prepare("update autoria set editora = ?,  Datalancamento = ? where cod_autor = ? and cod_livro = ?");
+                    @$sql->bindParam(1, $this->geteditora(),PDO::PARAM_STR);
+                    @$sql-> bindParam(2, $this->getlancamento(), PDO::PARAM_STR);
+                    @$sql->bindParam(3, $this->getcod_autor(),PDO::PARAM_STR);
+                    @$sql-> bindParam(4, $this->getcod_livro(), PDO::PARAM_STR);
+
+                    $sql->execute();
+                    if($sql->execute() == 1){
+        
+                        return "Registro alterado com sucesso!";
+        
+                    }
+                    $this->conn = null;
+                }catch(PDOException $exc){
+                    echo "Erro ao alterar registro. " . $exc->getMessage();
+                }
+            }
+
 
     }
 

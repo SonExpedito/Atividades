@@ -132,8 +132,47 @@
                 }
             }
 
+            function alterar(){
+                try{
+                    $this->conn = new Conectar();
+                    $sql = $this->conn->prepare("Select * from livro where cod_livro = ? ");               
+                    @$sql->bindParam(1, $this->getcod_livro(),PDO::PARAM_STR);
+                    $sql->execute();
+                    return $sql->fetchAll();
+                    $this->conn = null;
+                }catch(PDOException $exc){
+                    echo "Erro ao alterar. " . $exc->getMessage();
+                }
+            }
+        
+            function alterar2(){
+                try{
+                    $this->conn = new Conectar();
+                    $sql = $this->conn->prepare("update livro set titulolivro = ?,  isbn = ?, categoria = ?, idioma = ?
+                      where cod_livro = ?");
+                    @$sql->bindParam(1, $this->gettitulolivro(),PDO::PARAM_STR);
+                    @$sql-> bindParam(2, $this->getisbn(), PDO::PARAM_STR);
+                    @$sql-> bindParam(3, $this->getcategoria(), PDO::PARAM_STR);
+                    @$sql-> bindParam(4, $this->getidioma(), PDO::PARAM_STR);
+                    @$sql->bindParam(5, $this->getcod_livro(),PDO::PARAM_STR);
+    
+                    $sql->execute();
+                    if($sql->execute() == 1){
+        
+                        return "Registro alterado com sucesso!";
+        
+                    }
+                    $this->conn = null;
+                }catch(PDOException $exc){
+                    echo "Erro ao alterar registro. " . $exc->getMessage();
+                }
+                catch(Exception $exc){
+                    echo "Status:". $exc->getMessage();
+            }
+
+
     }
 
-
+    }
 
 ?>
